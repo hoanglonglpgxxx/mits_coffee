@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/844ecd1e03.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Mits's Coffee Shop</title>
+  </head>
+  <body>
+    <div class="load" id="load">
+      <img src="./assets/imgs/loadcoffee.gif" alt="" class="load__img" />
+    </div>
+
+    <!--HEADER-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <img src="./assets/imgs/logo.png" alt="logo header" class="nav__logo--img" />
+          Coffee
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#products" class="nav__link">products</a>
+            </li>
+            <li class="nav__item">
+              <a href="#quality" class="nav__link">quality</a>
+            </li>
+            <li class="nav__item">
+              <a href="#blog" class="nav__link">blog</a>
+            </li>
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+    <!--END HEADER-->
+
+    <!--MAIN-->
+    <section class="main">
+      <!--HOME-->
+      <section class="home" id="home">
+        <div class="home__container">
+          <div class="home__content container">
+            <h1 class="home__title">
+              <span>Enjoy coffee at our place</span>
+            </h1>
+            <p class="descript">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+              voluptatibus tenetur corrupti nam sit. Ab id quas aperiam dolore fugit animi
+              laborum, repudiandae earum? Ea cumque autem quo quod veniam. Incidunt
+              voluptatem necessitatibus earum, facere natus facilis laborum expedita vero
+              accusamus sit quis eveniet ut ipsum voluptate quaerat nesciunt nihil maxime
+              amet praesentium possimus quibusdam deleniti, neque ad? Omnis, beatae?
+            </p>
+
+            <div class="home__data">
+              <div class="home__data-group">
+                <h2 class="home__data-number">120K</h2>
+                <h3 class="home__data-title">Testimonial</h3>
+                <p class="home__data-descript">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae quas enim
+                  possimus provident nihil culpa, itaque, velit expedita maxime, odit
+                  error ad obcaecati reprehenderit facilis! Magnam at quis ad nemo?
+                </p>
+              </div>
+
+              <div class="home__data-group">
+                <h2 class="home__data-number">200+</h2>
+                <h3 class="home__data-title">Exclusive Product</h3>
+                <p class="home__data-descript">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae quas enim
+                  possimus provident nihil culpa, itaque, velit expedita maxime, odit
+                  error ad obcaecati reprehenderit facilis! Magnam at quis ad nemo?
+                </p>
+              </div>
+            </div>
+
+            <a href="#special">
+              <img
+                src="./assets/imgs/scroll.png"
+                alt="scroll img"
+                class="home__special-img"
+              />
+            </a>
+          </div>
+        </div>
+        <img src="./assets/imgs/home.png" alt="home image" class="home__img" />
+      </section>
+      <!--END HOME-->
+
+      <!--SPECIAL-->
+      <section class="special section container" id="special">
+        <div class="special__container">
+          <div class="special__box">
+            <h2 class="section__title">
+              Specialty coffess that make you happy and cheer you up!
+            </h2>
+            <div>
+              <a href="#" class="button special__button">See more</a>
+            </div>
+          </div>
+
+          <div class="special__category">
+            <div class="special__group">
+              <img src="./assets/imgs/special1.png" alt="special1" class="special__img" />
+              <h3 class="special__title">Selected Coffee</h3>
+              <p class="special__descript">We selected the best premium coffe</p>
+            </div>
+
+            <div class="special__group">
+              <img src="./assets/imgs/special2.png" alt="special2" class="special__img" />
+              <h3 class="special__title">Deliscious Cookies</h3>
+              <p class="special__descript">Enjoy ur coffee with awesome cookies.</p>
+            </div>
+
+            <div class="special__group">
+              <img src="./assets/imgs/special3.png" alt="special3" class="special__img" />
+              <h3 class="special__title">Enjoy at home</h3>
+              <p class="special__descript">Enjoy the best coffee</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--END SPECIAL-->
+
+      <!--PRODUCTS-->
+      <section class="products section container" id="products">
+        <div class="product__container container">
+          <h2 class="section__title">Choose products</h2>
+          <ul class="products__filters">
+            <li class="products__item products__line active-product">
+              <h3 class="products__title" data-filter="all">All</h3>
+              <span class="products__stock">10 products</span>
+            </li>
+            <li class="products__item products__line">
+              <h3 class="products__title" data-filter="delicacies">New delicacies</h3>
+              <span class="products__stock">3 products</span>
+            </li>
+
+            <li class="products__item products__line">
+              <h3 class="products__title" data-filter="coffee">Hot coffee</h3>
+              <span class="products__stock">4 products</span>
+            </li>
+
+            <li class="products__item products__line">
+              <h3 class="products__title" data-filter="cake">Cake And Delicacies</h3>
+              <span class="products__stock">4 products</span>
+            </li>
+          </ul>
+
+          <div class="products__content">
+            <!--Delicacies-->
+            <article class="products__card delicacies">
+              <div class="products__shape">
+                <img src="./assets/imgs/delicacies1.png" alt="" class="products__img" />
+              </div>
+              <div class="products__data">
+                <h2 class="products__price">$4.9</h2>
+                <h3 class="products__name">Cookies</h3>
+                <button class="button products__button">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+              </div>
+            </article>
+
+            <article class="products__card delicacies">
+              <div class="products__shape">
+                <img src="./assets/imgs/delicacies2.png" alt="" class="products__img" />
+              </div>
+              <div class="products__data">
+                <h2 class="products__price">$1.9</h2>
+                <h3 class="products__name">Croissant</h3>
+                <button class="button products__button">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+              </div>
+            </article>
+
+            <article class="products__card delicacies">
+              <div class="products__shape">
+                <img src="./assets/imgs/delicacies3.png" alt="" class="products__img" />
+              </div>
+              <div class="products__data">
+                <h2 class="products__price">$2.9</h2>
+                <h3 class="products__name">Brezel</h3>
+                <button class="button products__button">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+              </div>
+            </article>
+
+            <!--Coffee-->
+            <article class="products__card coffee">
+              <div class="products__shape">
+                <img src="./assets/imgs/coffee1.png" alt="" class="products__img" />
+              </div>
+              <div class="products__data">
+                <h2 class="products__price">$1.2</h2>
+                <h3 class="products__name">Black Coffee</h3>
+                <button class="button products__button">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+              </div>
+            </article>
+
+            <article class="products__card coffee">
+              <div class="products__shape">
+                <img src="./assets/imgs/coffee2.png" alt="" class="products__img" />
+              </div>
+              <div class="products__data">
+                <h2 class="products__price">$1.2</h2>
+                <h3 class="products__name">Pure Coffee</h3>
+                <button class="button products__button">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+              </div>
+            </article>
+            <article class="products__card coffee">
+              <div class="products__shape">
+                <img src="./assets/imgs/coffee3.png" alt="" class="products__img" />
+              </div>
+              <div class="products__data">
+                <h2 class="products__price">$1.2</h2>
+                <h3 class="products__name">Milk Coffee</h3>
+                <button class="button products__button">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+              </div>
+            </article>
+            <article class="products__card coffee">
+              <div class="products__shape">
+                <img src="./assets/imgs/coffee4.png" alt="" class="products__img" />
+              </div>
+              <div class="products__data">
+                <h2 class="products__price">$1.2</h2>
+                <h3 class="products__name">Moka Coffee</h3>
+                <button class="button products__button">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+              </div>
+            </article>
+
+            <!--Cake and Delicacies-->
+            <article class="products__card cake">
+              <div class="products__shape">
+                <img src="./assets/imgs/cake1.png" alt="" class="products__img" />
+              </div>
+              <div class="products__data">
+                <h2 class="products__price">$1.2</h2>
+                <h3 class="products__name">Cream Cake</h3>
+                <button class="button products__button">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+              </div>
+            </article>
+            <article class="products__card cake">
+              <div class="products__shape">
+                <img src="./assets/imgs/cake2.png" alt="" class="products__img" />
+              </div>
+              <div class="products__data">
+                <h2 class="products__price">$1.2</h2>
+                <h3 class="products__name">Chocolate Croissant</h3>
+                <button class="button products__button">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+              </div>
+            </article>
+            <article class="products__card cake">
+              <div class="products__shape">
+                <img src="./assets/imgs/cake3.png" alt="" class="products__img" />
+              </div>
+              <div class="products__data">
+                <h2 class="products__price">$1.2</h2>
+                <h3 class="products__name">Pancake</h3>
+                <button class="button products__button">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+              </div>
+            </article>
+            <article class="products__card cake">
+              <div class="products__shape">
+                <img src="./assets/imgs/cake4.png" alt="" class="products__img" />
+              </div>
+              <div class="products__data">
+                <h2 class="products__price">$1.2</h2>
+                <h3 class="products__name">Milk Cake</h3>
+                <button class="button products__button">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!--END PRODUCTS-->
+
+      <!--QUALITY-->
+      <section class="quality section" id="quality">
+        <div class="quality__container container">
+          <h2 class="section__title">
+            We offer a premium and better quality preparation
+          </h2>
+          <div class="quality__content">
+            <div class="quality__imgs">
+              <img
+                src="./assets/imgs/quality1.png"
+                alt="quality img"
+                class="quality__img-big"
+              />
+              <img
+                src="./assets/imgs/quality2.png"
+                alt="quality img"
+                class="quality__img-small"
+              />
+            </div>
+            <div class="quality__data">
+              <h2 class="quality__title">Premium Coffee</h2>
+              <h3 class="quality__price">$99.42</h3>
+              <span class="quality__special">Especial Price</span>
+              <p class="quality__descript">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+                assumenda quo? Expedita atque, beatae perferendis libero, illo sed ab est
+                suscipit mollitia fugiat quam iusto incidunt nihil, perspiciatis fugit
+                porro! Mollitia ut doloremque quos nisi provident eligendi reprehenderit
+                odit inventore, quas necessitatibus saepe, accusamus recusandae delectus
+                molestias enim voluptatum quasi obcaecati voluptate fugit possimus
+                explicabo aliquam, iusto dolor assumenda. Fugiat. Nam quos ipsum
+                repudiandae aut ullam, doloribus minus dolores harum itaque nulla illum
+                error dignissimos pariatur praesentium cupiditate dolorum? Officia tenetur
+                quos commodi laborum magni assumenda optio nihil, sit ipsam?
+              </p>
+              <div class="quality__buttons">
+                <button class="button">Buy now</button>
+                <a href="#" class="quality__button"
+                  >See more
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--END QUALITY-->
+
+      <!-- LOGO-->
+      <section class="logo section">
+        <div class="logo__container container">
+          <img src="./assets/imgs/logocoffee1.png" alt="" class="logo__img" />
+          <img src="./assets/imgs/logocoffee2.png" alt="" class="logo__img" />
+          <img src="./assets/imgs/logocoffee3.png" alt="" class="logo__img" />
+          <img src="./assets/imgs/logocoffee4.png" alt="" class="logo__img" />
+          <img src="./assets/imgs/logocoffee5.png" alt="" class="logo__img" />
+        </div>
+      </section>
+      <!--END LOGO-->
+
+      <!-- BLOG-->
+      <section class="blog section" id="blog">
+        <div class="blog__container container">
+          <h2 class="section__title">Our Blogs with trending topic for this week</h2>
+          <div class="blog__content">
+            <article class="blog__card">
+              <div class="blog__imgs">
+                <img src="./assets/imgs/blog1.png" alt="blog 1" class="blog__img" />
+                <a href="#" class="blog__button">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+
+              <div class="blog__data">
+                <h2 class="blog__title">10 Coffee Recommendations</h2>
+                <p class="blog_-descript">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+                  consequuntur architecto saepe accusamus. Laboriosam, itaque incidunt
+                  ducimus iusto, odit veritatis labore quasi ipsam doloribus accusamus
+                  maxime iste assumenda aut? Et?
+                </p>
+                <div class="blog__footer">
+                  <div class="blog__reaction">
+                    <i class="fa-solid fa-comment"></i>
+                    <span>12</span>
+                  </div>
+                  <div class="blog__reaction">
+                    <i class="fa-solid fa-eye"></i>
+                    <span>100K</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="blog__card">
+              <div class="blog__imgs">
+                <img src="./assets/imgs/blog2.png" alt="blog 2" class="blog__img" />
+                <a href="#" class="blog__button">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+
+              <div class="blog__data">
+                <h2 class="blog__title">12 Benefits of Drinking Coffee</h2>
+                <p class="blog_-descript">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+                  consequuntur architecto saepe accusamus. Laboriosam, itaque incidunt
+                  ducimus iusto, odit veritatis labore quasi ipsam doloribus accusamus
+                  maxime iste assumenda aut? Et?
+                </p>
+                <div class="blog__footer">
+                  <div class="blog__reaction">
+                    <i class="fa-solid fa-comment"></i>
+                    <span>45</span>
+                  </div>
+                  <div class="blog__reaction">
+                    <i class="fa-solid fa-eye"></i>
+                    <span>99K</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!--END BLOG-->
+    </section>
+    <!--END MAIN-->
+
+    <!-- FOOTER-->
+    <footer class="footer">
+      <div class="footer__container container">
+        <h2 class="footer__title">Coffee</h2>
+        <div class="footer__content">
+          <div class="footer__data">
+            <p class="footer__descript">Subcribe to our newsletter</p>
+            <div class="footer__newsletter">
+              <input type="email" class="footer__input" placeholder="Email...." />
+              <button class="footer__button">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="footer__data">
+            <h2 class="footer__subtitle">Address</h2>
+            <p class="footer__information">
+              No.14 , Tan Trieu St.<br />
+              Tan Trieu, Thanh Tri, Ha Noi
+            </p>
+          </div>
+          <div class="footer__data">
+            <h2 class="footer__subtitle">Contact</h2>
+            <p class="footer__information">
+              0961361536 <br />
+              hoanglongle201000@gmail.com
+            </p>
+          </div>
+          <div class="footer__data">
+            <h2 class="footer__subtitle">Office</h2>
+            <p class="footer__information">
+              Monday - Saturday <br />
+              9AM - 10PM
+            </p>
+          </div>
+        </div>
+
+        <div class="footer__group">
+          <ul class="footer__social">
+            <a href="https://facebook.com/" target="_blank" class="footer__social-link">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://github.com" target="_blank" class="footer__social-link">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto: hoanglongle201000@gmail.com" class="footer__social-link">
+              <i class="fa-brands fa-google"></i>
+            </a>
+          </ul>
+
+          <div class="footer__copy">&#169; Mits <span class="curryear">1990</span></div>
+        </div>
+      </div>
+    </footer>
+    <!--END FOOTER-->
+
+    <a href="#home" class="scroll-up" id="scroll-up">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <script src="./assets/main.js"></script>
+  </body>
+</html>
