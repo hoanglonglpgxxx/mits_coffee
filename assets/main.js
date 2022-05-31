@@ -6,7 +6,7 @@ const productsItems = document.querySelectorAll('.products__item');
 const productsCards = document.querySelectorAll('.products__card');
 const sections = document.querySelectorAll('section[id]');
 
-loader;
+//loader;
 onload = () => {
     const load = document.getElementById('load');
     setTimeout(() => {
